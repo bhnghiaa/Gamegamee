@@ -268,6 +268,14 @@ public class ObjectManager {
 //                    skill.setActive(false);
                 }
             }
+            for (Wraith wraith : currentLevel.getWraiths()) {
+                if (skill.getHitbox().intersects(wraith.getHitbox()) && skill.isActive()) {
+                    wraith.hurt(19);
+                    skill.setActive(false);
+                } else if (IsProjectileHittingLevel1(lvlData, skill)) {
+//                    skill.setActive(false);
+                }
+            }
         }
     }
 
