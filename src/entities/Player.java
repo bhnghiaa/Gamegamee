@@ -60,7 +60,7 @@ public class Player extends Entity {
     private int tileY = 0;
     private int powerAttackTick;
     //    private int powerGrowSpeed = 60;
-    private int powerGrowSpeed = 1;
+    private int powerGrowSpeed = 10;
 
     private int normalAttackTick;
     private int normalAttackGrowSpeed = 50;
@@ -73,7 +73,7 @@ public class Player extends Entity {
         this.state = IDLE;
         this.walkSpeed = 1f * Game.SCALE;
 //        this.maxHealth = 30;
-        this.maxHealth = 30000;
+        this.maxHealth = 100;
 
         this.currentHealth = maxHealth;
         loadAnimations();

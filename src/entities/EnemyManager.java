@@ -194,8 +194,8 @@ public class EnemyManager {
                         (int) bd.getHitbox().x - xLvlOffset - BRINGER_OF_DEATH_DRAWOFFSET_X + bd.flipX(),
                         (int) bd.getHitbox().y - BRINGER_OF_DEATH_DRAWOFFSET_Y - (int) ( Game.SCALE),
                         BRINGER_OF_DEATH_WIDTH * bd.flipW(), BRINGER_OF_DEATH_HEIGHT, null);
-                bd.drawHitbox(g, xLvlOffset);
-                bd.drawAttackBox(g, xLvlOffset);
+//                bd.drawHitbox(g, xLvlOffset);
+//                bd.drawAttackBox(g, xLvlOffset);
             }
     }
 
@@ -207,7 +207,7 @@ public class EnemyManager {
                         (int) s.getHitbox().y - SHARK_DRAWOFFSET_Y,
                         SHARK_WIDTH * s.flipW(), SHARK_HEIGHT, null);
 //				s.drawHitbox(g, xLvlOffset);
-				s.drawAttackBox(g, xLvlOffset);
+//				s.drawAttackBox(g, xLvlOffset);
             }
     }
 
@@ -270,7 +270,7 @@ public class EnemyManager {
                         WRAITH_WIDTH * wraith.flipW(), WRAITH_HEIGHT, null);
 
 //                wraith.drawHitbox(g, xLvlOffset);
-                wraith.drawAttackBox(g, xLvlOffset);
+//                wraith.drawAttackBox(g, xLvlOffset);
             }
         }
     }

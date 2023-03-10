@@ -199,7 +199,7 @@ public abstract class Enemy extends Entity {
         System.out.println("****" + player.currentHealth + "*****");
 
         aniTick++;
-        if ((state == HIT || state == ATTACK) && (enemyType == MINOTAUR)) ANI_SPEED = 5;
+        if ((state == HIT || state == ATTACK) && (enemyType == MINOTAUR)) ANI_SPEED = 7;
         if ((state == HIT || state == ATTACK) && (enemyType == WRAITH)) ANI_SPEED = 5;
 
         if ((state == HIT) && (enemyType == GOLEM)) ANI_SPEED = 5;
